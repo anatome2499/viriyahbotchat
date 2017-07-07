@@ -16,24 +16,24 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			//buildaction
+			$action1=["type"=> "message",
+            "label"=> "Yes",
+            "text"=> "yes"];
+
+            $action2=["type"=> "message",
+            "label"=> "No",
+            "text"=> "no"];
+
 			//build template&action
 			$action ="actions"=> [
-          {
-            "type"=> "message",
-            "label"=> "Yes",
-            "text"=> "yes"
-          },
-          {
-            "type"=> "message",
-            "label"=> "No",
-            "text"=> "no"
-          }
-      		];
-			$template ="template"=> {
+          $action1,
+          $action2];
+			$template ="template"=> [
       		"type"=> "confirm",
       		"text"=> "Are you sure?",
       		$action
-  		};
+  		];
 
 			// Build message to reply back
 			$messages = [
@@ -65,3 +65,4 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
+			
