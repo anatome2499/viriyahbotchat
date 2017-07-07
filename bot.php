@@ -28,8 +28,7 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			$template=json_decode($testtemplate,true);
-			$post = json_encode($data).$template;
+			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
@@ -46,8 +45,6 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-
-
 
 ?>
 
