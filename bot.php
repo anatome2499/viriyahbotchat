@@ -103,7 +103,7 @@ if (!is_null($events['events'])) {
 				'title' => $title,
 				'address'=> $address,
 				'latitude'=>$latitude,
-				'longtitude'=>$longitude
+				'longitude'=>$longitude
 			];
 
 
@@ -132,7 +132,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.46";
+echo "14.48";
 
 
 ?>
