@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 							"type"=> "template",
   							"altText"=> "this is a confirm template",
-  							"template"=> [$template]
+  							"template"=> $template];
 ];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
