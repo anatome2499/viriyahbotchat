@@ -18,9 +18,8 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				"type"=> "imagemap",
-  "baseUrl"=> "https://example.com/bot/images/rm001",
-  "altText"=> "this is an imagemap"
+				"type"=> "template",
+  "altText"=> "this is a confirm template"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
