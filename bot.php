@@ -55,8 +55,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'sticker',
-				'packageId' => $sticker['packageId'],
-				'stickerId'=>$sticker['stickerId']
+				'packageId' => "1",
+				'stickerId'=>"1"
 			];
 
 
@@ -84,7 +84,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.38";
+echo "13.40";
 
 
 ?>
