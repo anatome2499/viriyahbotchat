@@ -99,7 +99,7 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'sticker',
+				'type' => 'location',
 				'title' => $title,
 				'address'=>$address,
 				'latitude'=>$latitude,
@@ -133,7 +133,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.28";
+echo "14.30";
 
 
 ?>
