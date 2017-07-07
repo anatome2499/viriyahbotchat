@@ -150,8 +150,8 @@ if (!is_null($events['events'])) {
 
 			$messages=[
 			"type"=> "image",
-    "originalContentUrl"=> "https://example.com/original.jpg",
-    "previewImageUrl"=> "https://example.com/preview.jpg"
+    "originalContentUrl"=> $originalContentUrl,
+    "previewImageUrl"=> $previewImageUrl
 			];
 
 
@@ -181,7 +181,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.59";
+echo "15.01";
 
 
 ?>
