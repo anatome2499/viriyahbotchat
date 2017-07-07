@@ -142,10 +142,16 @@ if (!is_null($events['events'])) {
 			
 
 			// Build message to reply back
-			$messages = [
-				'type' => 'image',
-				'originalContentUrl'=>$originalContentUrl,
-				'previewImageUrl'=>$previewImageUrl
+			//$messages = [
+				//'type' => 'image',
+				//'originalContentUrl'=>$originalContentUrl,
+				//'previewImageUrl'=>$previewImageUrl
+			//];
+
+			$messages=[
+			"type"=> "image",
+    "originalContentUrl"=> "https://example.com/original.jpg",
+    "previewImageUrl"=> "https://example.com/preview.jpg"
 			];
 
 
@@ -175,7 +181,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.56";
+echo "14.59";
 
 
 ?>
