@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
             			"text"=> "no"];
 
             //build action
-            $action=[$action1,$action2];
+            $action=[[$action1],[$action2],];
 
             //template
             $template=[
