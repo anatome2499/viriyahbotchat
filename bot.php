@@ -98,14 +98,17 @@ if (!is_null($events['events'])) {
 			
 
 			// Build message to reply back
+			//$messages = [
+				//'type' => 'location',
+				//'title' => $title,
+				//'address'=>$address,
+				//'latitude'=>$latitude,
+				//'longtitude'=>$longtitude
+			//];
 			$messages = [
-				'type' => 'location',
-				'title' => $title,
-				'address'=>$address,
-				'latitude'=>$latitude,
-				'longtitude'=>$longtitude
+				'type' => 'text',
+				'text' => "location"
 			];
-
 
 
 
@@ -133,7 +136,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.30";
+echo "14.34";
 
 
 ?>
