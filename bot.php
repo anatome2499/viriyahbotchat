@@ -91,7 +91,7 @@ if (!is_null($events['events'])) {
 			$title=$event['message']['title'];
 			$address=$event['message']['address'];
 			$latitude=$event['message']['latitude'];
-			$longtitude=$event['message']['longtitude'];
+			$longitude=$event['message']['longitude'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -99,11 +99,11 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				"type"=> "location",
-    			"title"=> "my location",
-    			"address"=> "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
-    			"latitude"=> 35.65910807942215,
-    			"longitude"=> 139.70372892916203
+				'type' => 'location',
+				'title' => $title,
+				'address'=> $address,
+				'latitude'=>$latitude,
+				'longtitude'=>$longitude
 			];
 
 
@@ -132,7 +132,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.41";
+echo "14.46";
 
 
 ?>
