@@ -46,22 +46,19 @@ if (!is_null($events['events'])) {
 		}
 		else if($event['type']=='message'&&$event['message']['type']=='sticker'){
 			//get sticker sent
-			$sticker=$event['message']['packageId']['stickerId'];
+			$sticker=$event['stickerId']['packageId']['message'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
 			
 
 			// Build message to reply back
-			//$messages = [
-				//'type' => 'sticker',
-				//'sticker' => $sticker
-			//];
-
 			$messages = [
-				'type' => 'text',
-				'text' => "sticker test"
+				'type' => 'sticker',
+				'sticker' => $sticker
 			];
+
+
 
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -86,7 +83,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.27";
+echo "13.31";
 
 
 ?>
