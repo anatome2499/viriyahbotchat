@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 		}
 		else if($event['type']=='message'&&$event['message']['type']=='sticker'){
 			//get sticker sent
-			$sticker=$event['stickerId']['packageId']['message'];
+			$sticker=$event['message']['sticker'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -83,7 +83,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.31";
+echo "13.33";
 
 
 ?>
