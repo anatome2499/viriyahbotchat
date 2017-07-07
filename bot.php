@@ -69,6 +69,8 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
+
+
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
@@ -85,7 +87,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.47";
+echo "14.14";
 
 
 ?>
