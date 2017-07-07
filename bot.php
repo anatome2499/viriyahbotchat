@@ -16,10 +16,30 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			//build template&action
+			$action ="actions"=> [
+          {
+            "type"=> "message",
+            "label"=> "Yes",
+            "text"=> "yes"
+          },
+          {
+            "type"=> "message",
+            "label"=> "No",
+            "text"=> "no"
+          }
+      		];
+			$template ="template"=> {
+      		"type"=> "confirm",
+      		"text"=> "Are you sure?",
+      		$action
+  		};
+
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => $text
+				"type"=> "template",
+  				"altText"=> "this is a confirm template",
+  				$template
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
