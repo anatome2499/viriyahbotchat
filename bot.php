@@ -53,10 +53,16 @@ if (!is_null($events['events'])) {
 			
 
 			// Build message to reply back
+			//$messages = [
+				//'type' => 'sticker',
+				//'sticker' => $sticker
+			//];
+
 			$messages = [
-				'type' => 'sticker',
-				'sticker' => $sticker
+				'type' => 'text',
+				'text' => "sticker test"
 			];
+
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -80,7 +86,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.24";
+echo "13.27";
 
 
 ?>
