@@ -16,34 +16,29 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			//build action1
-			$action1={
-						"type"=> "message",
-            			"label"=> "Yes",
-            			"text"=> "yes"};
-
-            //build action2
-			$action2={
-						"type"=> "message",
-            			"label"=> "No",
-            			"text"=> "no"};
-
-            //build action
-            $action=[$action1,$action2];
-
-            //build template
-            $template={
-            		"type"=> "confirm",
-      				"text"=> "Are you sure?",
-      				"actions"=> $action
-            };
+			
 
 			// Build message to reply back
-			$messages = [
-				"type"=> "template",
-  				"altText"=> "this is a confirm template"
-  				"template"=> $template
-			];
+			$messages = json_decode('{
+  '.'"type"'.':'.' "template"'.',
+  '.'"altText"'.':'.' "this is a confirm template"'.','.
+  '"template"'.':'. '{
+      '.'"type"'.':'.' "confirm"'.','.
+      '"text"'.':'.' "Are you sure?"'.','.
+      '"actions"'.':'.' [
+          {
+            '.'"type"'.':'.' "message"'.','.
+            '"label"'.':'.' "Yes"'.','.
+            '"text"'.':'.' "yes"'.'
+          },
+          {
+            '.'"type"'.':'. '"message"'.','.
+            '"label"'.':'. '"No"'.','.
+            '"text"'.':'. '"no"'.
+          '}
+      ]
+  }
+}'.'")';
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -67,7 +62,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "11.52";
+echo "13.11";
 
 
 ?>
