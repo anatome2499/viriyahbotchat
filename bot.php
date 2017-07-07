@@ -16,36 +16,31 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			//build action1
+			$action1=[
+						"type"=> "message",
+            			"label"=> "Yes",
+            			"text"=> "yes"];
+
+            //build action2
+			$action2=[
+						"type"=> "message",
+            			"label"=> "No",
+            			"text"=> "no"];
+
+            //build action
+            $action=[$action1,$action2];
+
+            //template
+            $template=[
+            			"type"=> "confirm",
+      					"text"=> "Are you sure?",$action];
+
 			// Build message to reply back
-			$messages = ["type"=> "imagemap",
-  "baseUrl"=> "https://example.com/bot/images/rm001",
-  "altText"=> "this is an imagemap",
-  "baseSize"=> [
-      "height"=> 1040,
-      "width"=> 1040
-  ],
-  "actions"=> [
-      [
-          "type"=> "uri",
-          "linkUri"=> "https://example.com/",
-          "area": [
-              "x"=> 0,
-              "y"=> 0,
-              "width"=> 520,
-              "height"=> 1040
-          ]
-      ],
-      [
-          "type"=> "message",
-          "text"=> "hello",
-          "area"=> [
-              "x"=> 520,
-              "y"=> 0,
-              "width"=> 520,
-              "height"=> 1040
-          ]
-      ]
-  ]
+			$messages = [
+							"type"=> "template",
+  							"altText"=> "this is a confirm template",
+  							"template"=> [$template]
 ];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -70,6 +65,8 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
+
+
 
 ?>
 
