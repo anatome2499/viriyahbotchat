@@ -18,9 +18,9 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				"type"=> "audio",
-    "originalContentUrl"=> "https://example.com/original.m4a",
-    "duration"=> 240000
+				"type"=> "imagemap",
+  "baseUrl"=> "https://example.com/bot/images/rm001",
+  "altText"=> "this is an imagemap"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
