@@ -16,13 +16,13 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-
 			// Build message to reply back
 			$messages = [
-							"type"=> "template",
-  							"altText"=> "this is a confirm template"
-  							];
-];
+				"type"=> "audio",
+    "originalContentUrl"=> "https://example.com/original.m4a",
+    "duration"=> 240000
+			];
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
@@ -46,7 +46,6 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-
 
 
 ?>
