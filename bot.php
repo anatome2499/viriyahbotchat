@@ -34,7 +34,8 @@ if (!is_null($events['events'])) {
             //template
             $template=[
             			"type"=> "confirm",
-      					"text"=> "Are you sure?",$action];
+      					"text"=> "Are you sure?",
+      					"actions"=>$action];
 
 			// Build message to reply back
 			$messages = [
