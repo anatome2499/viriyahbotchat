@@ -46,7 +46,8 @@ if (!is_null($events['events'])) {
 		}
 		else if($event['type']=='message'&&$event['message']['type']=='sticker'){
 			//get sticker sent
-			$sticker=$event['message']['sticker'];
+			$packageId=$event['message']['packageId'];
+			$stickerId=$event['message']['stickerId'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -55,8 +56,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'sticker',
-				'packageId' => "1",
-				'stickerId'=>"1"
+				'packageId' => $packageId,
+				'stickerId'=>$stickerId
 			];
 
 
@@ -84,7 +85,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.40";
+echo "13.43";
 
 
 ?>
