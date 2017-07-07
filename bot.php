@@ -35,14 +35,14 @@ if (!is_null($events['events'])) {
             $template=[
             			"type"=> "confirm",
       					"text"=> "Are you sure?",
-      					"actions"=>[$action]
+      					"actions"=>[$action],
       					];
 
 			// Build message to reply back
 			$messages = [
 							"type"=> "template",
   							"altText"=> "this is a confirm template",
-  							"template"=> [$template]
+  							"template"=> [$template],
   							];
 ];
 			// Make a POST Request to Messaging API to reply to sender
