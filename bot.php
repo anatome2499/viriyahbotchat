@@ -16,30 +16,10 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			//buildtemplate
-			$testtemplate="{
-\"type\": \"template\",
-  \"altText\": \"this is a confirm template\",
-  \"template\": {
-      \"type\": \"confirm\",
-      \"text": \"Are you sure?\",
-      \"actions\": [
-          {
-            \"type\": \"message\",
-            \"label\": \"Yes\",
-            \"text\": \"yes\"
-          },
-          {
-            \"type\": \"message\",
-            \"label\": \"No\",
-            \"text\": \"no\"
-          }
-      ]
-  }";
-
-  			$template=json_decode($testtemplate,true);
 			// Build message to reply back
-			$messages = [$template
+			$messages = [
+				'type' => 'text',
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -48,9 +28,8 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-
-			
-			$post = json_encode($data);
+			$template=json_decode($testtemplate,true);
+			$post = json_encode($data).$template;
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
