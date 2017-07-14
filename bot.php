@@ -93,7 +93,7 @@ if (!is_null($events['events'])) {
 								'type' =>"carousel" ,
 								'columns'=>array(
 												array(
-													'thumbnailImageUrl' =>"https://example.com/bot/images/item1.jpg" ,
+													'thumbnailImageUrl' =>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
 												 	'actions'=>array(
@@ -246,8 +246,8 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-include("index.php");
-echo "15.12";
+
+echo "15.31";
 
 
 ?>
