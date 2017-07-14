@@ -42,13 +42,13 @@ if (!is_null($events['events'])) {
 				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'yes'),array('type' =>'message' ,'label'=>"No",'text'=>'no') ) )
 				];
 			}
-			else if($text=="carousel"){
-				$messages[
-				'type'=>'template',
-				'altText'=>"this is a carousel template",
-				'template'=>array('type' =>"carousel" ,'columns'=>array('thumbnailImageUrl' =>"https://example.com/bot/images/item1.jpg" ,'title'=>"this is menu",'text'=>"description",'actions'=>array(array('type' =>"postback",'label'=>"Buy",'data'=>"action=buy&itemid=111" ),array('type' =>"postback",'label'=>"Add to cart",'data'=>"action=add&itemid=111" ),array('type' => "uri",'label'=>"View detail",'uri'=>"http://example.com/page/111" ) ) ) )
-				];
-			}
+			//else if($text=="carousel"){
+				//$messages[
+				//'type'=>'template',
+				//'altText'=>"this is a carousel template",
+				//'template'=>array('type' =>"carousel" ,'columns'=>array('thumbnailImageUrl' =>"https://example.com/bot/images/item1.jpg" ,'title'=>"this is menu",'text'=>"description",'actions'=>array(array('type' =>"postback",'label'=>"Buy",'data'=>"action=buy&itemid=111" ),array('type' =>"postback",'label'=>"Add to cart",'data'=>"action=add&itemid=111" ),array('type' => "uri",'label'=>"View detail",'uri'=>"http://example.com/page/111" ) ) ) )
+				//];
+			//}
 			else{
 				// Build message to reply back
 			$messages = [
