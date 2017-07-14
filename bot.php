@@ -22,14 +22,14 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'originalContentUrl' => "https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
-				'previewImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png"
+				'originalContentUrl' => "http://www.asnbroker.co.th/image_news/612/003.jpg",
+				'previewImageUrl'=>"http://www.asnbroker.co.th/image_news/612/003.jpg"
 			];
 			}
 			else if($text=="imagemap"){
 				$messages=[
 				'type'=>'imagemap',
-				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
+				'baseUrl'=>"http://www.asnbroker.co.th/image_news/612/003.jpg",
 				'altText'=>"this is an imagemap",
 				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
 				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"http://www.viriyah.co.th/th/product.php",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
@@ -62,7 +62,7 @@ if (!is_null($events['events'])) {
 				'altText'=>"this is a buttons template",
 				'template'=>array(
 					'type' =>"buttons" ,
-					'thumbnailImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
+					'thumbnailImageUrl'=>"http://www.asnbroker.co.th/image_news/612/003.jpg",
 					'title'=>"Menu",
 					'text'=>"Please select",
 					'actions'=>array(
@@ -93,7 +93,7 @@ if (!is_null($events['events'])) {
 								'type' =>"carousel" ,
 								'columns'=>array(
 												array(
-													'thumbnailImageUrl' =>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png" ,
+													'thumbnailImageUrl' =>"http://www.asnbroker.co.th/image_news/612/003.jpg" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
 												 	'actions'=>array(
@@ -110,7 +110,7 @@ if (!is_null($events['events'])) {
 												 					)
 												 	)  ,
 												array(
-												 	'thumbnailImageUrl' =>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png" ,
+												 	'thumbnailImageUrl' =>"http://www.asnbroker.co.th/image_news/612/003.jpg" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
 												 	'actions'=>array(
@@ -247,7 +247,7 @@ if (!is_null($events['events'])) {
 	}
 }
 
-echo "15.31";
+echo "15.35";
 
 
 ?>
