@@ -20,18 +20,26 @@ if (!is_null($events['events'])) {
 
 			if($text=="ผลิตภัณฑ์ประกันภัย"){
 				// Build message to reply back
-				$actions['type']=["message","message"];
-				$actions['label']=["Yes","No"];
-				$actions['text']=["yes","no"];
-				$template['type']="confirm";
-				$template['text']="Are you sure?";
-				$template['actions']=$actions;
-
 			$messages = [
-				'type' => 'template',
-				'altText' => "this is a confirm",
-				'template'=>$template
+				'type' => 'image',
+				'originalContentUrl' => "http://www.viriyah.co.th/th/product.php",
+				'previewImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png"
 			];
+			}
+			else if($text=="template"){
+				// Build message to reply back
+				//$actions['type']=["message","message"];
+				//$actions['label']=["Yes","No"];
+				//$actions['text']=["yes","no"];
+				//$template['type']="confirm";
+				//$template['text']="Are you sure?";
+				//$template['actions']=$actions;
+
+			//$messages = [
+				//'type' => 'template',
+				//'altText' => "this is a confirm",
+				//'template'=>$template
+			//];
 			}
 			else{
 				// Build message to reply back
@@ -149,7 +157,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "9.27";
+echo "9.34";
 
 
 ?>
