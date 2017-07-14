@@ -72,9 +72,9 @@ if (!is_null($events['events'])) {
 										'text'=>'yes'
 										),
 									array(
-										'type' =>'message' ,
-										'label'=>"No",
-										'text'=>'no'
+										'type' =>'postback' ,
+										'label'=>"Buy",
+										'text'=>"action=buy&itemid=111"
 										) ,
 									array(
 										'type' =>"uri" ,
@@ -201,7 +201,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.22";
+echo "13.24";
 
 
 ?>
