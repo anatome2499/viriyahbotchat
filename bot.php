@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			else if($text=="imagemap"){
 				$messages=[
 				'type'=>'imagemap',
-				'baseUrl'=>"https://viriyahbotchat.herokuapp.com",
+				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png/1040",
 				'altText'=>"this is an imagemap",
 				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
 				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"https://example.com/",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
@@ -43,12 +43,12 @@ if (!is_null($events['events'])) {
 				];
 			}
 			//else if($text=="button template"){
-				$messages[
-				'type'=>'template',
-				'altText'=>"this is a buttons template",
-				'template'=>array('type' =>"buttons" ,'thumbnailImageUrl'=>"https://example.com/bot/images/image.jpg",'title'=>"Menu",'text'=>"Please select",'actions'=>array(array('type' =>"postback" ,'label'=>"Buy",'data'=>"action=buy&itemid=123" ),array('type' =>"postback" ,'label'=>"Add to cart",'data'=>"action=add&itemid=123" ),array('type' =>"uri" ,'label'=> "View detail",'uri'=>"http://example.com/page/123") ) )
-				];
-			}
+				//$messages[
+				//'type'=>'template',
+				//'altText'=>"this is a buttons template",
+				//'template'=>array('type' =>"buttons" ,'thumbnailImageUrl'=>"https://example.com/bot/images/image.jpg",'title'=>"Menu",'text'=>"Please select",'actions'=>array(array('type' =>"postback" ,'label'=>"Buy",'data'=>"action=buy&itemid=123" ),array('type' =>"postback" ,'label'=>"Add to cart",'data'=>"action=add&itemid=123" ),array('type' =>"uri" ,'label'=> "View detail",'uri'=>"http://example.com/page/123") ) )
+				//];
+			//}
 			else{
 				// Build message to reply back
 			$messages = [
@@ -165,7 +165,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "11.04";
+echo "11.11";
 
 
 ?>
