@@ -39,16 +39,16 @@ if (!is_null($events['events'])) {
 				$messages=[
 				'type'=>'template',
 				'altText'=>"this is a confirm template",
-				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'คุณ กด yes'),array('type' =>'message' ,'label'=>"No",'text'=>'คุณ กด no') ) )
+				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'yes'),array('type' =>'message' ,'label'=>"No",'text'=>'no') ) )
 				];
 			}
-			//else if($text=="button template"){
-				//$messages[
-				//'type'=>'template',
-				//'altText'=>"this is a buttons template",
-				//'template'=>array('type' =>"buttons" ,'thumbnailImageUrl'=>"https://example.com/bot/images/image.jpg",'title'=>"Menu",'text'=>"Please select",'actions'=>array(array('type' =>"postback" ,'label'=>"Buy",'data'=>"action=buy&itemid=123" ),array('type' =>"postback" ,'label'=>"Add to cart",'data'=>"action=add&itemid=123" ),array('type' =>"uri" ,'label'=> "View detail",'uri'=>"http://example.com/page/123") ) )
-				//];
-			//}
+			else if($text=="button template"){
+				$messages[
+				'type'=>'template',
+				'altText'=>"this is a buttons template",
+				'template'=>array('type' =>"buttons" ,'thumbnailImageUrl'=>"https://example.com/bot/images/image.jpg",'title'=>"Menu",'text'=>"Please select",'actions'=>array(array('type' =>"postback" ,'label'=>"Buy",'data'=>"action=buy&itemid=123" ),array('type' =>"postback" ,'label'=>"Add to cart",'data'=>"action=add&itemid=123" ),array('type' =>"uri" ,'label'=> "View detail",'uri'=>"http://example.com/page/123") ) )
+				];
+			}
 			else{
 				// Build message to reply back
 			$messages = [
@@ -165,7 +165,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "11.11";
+echo "11.16";
 
 
 ?>
