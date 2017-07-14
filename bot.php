@@ -20,12 +20,12 @@ if (!is_null($events['events'])) {
 
 			if($text=="ผลิตภัณฑ์ประกันภัย"){
 				// Build message to reply back
-				$actions['type']=>["message","message"];
-				$actions['label']=>["Yes","No"];
-				$actions['text']=>["yes","no"];
-				$template['type']=>"confirm";
-				$template['text']=>"Are you sure?";
-				$template['actions']=>$actions;
+				$actions['type']=["message","message"];
+				$actions['label']=["Yes","No"];
+				$actions['text']=["yes","no"];
+				$template['type']="confirm";
+				$template['text']="Are you sure?";
+				$template['actions']=$actions;
 
 			$messages = [
 				'type' => 'template',
@@ -149,7 +149,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "9.24";
+echo "9.27";
 
 
 ?>
