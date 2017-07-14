@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			else if($text=="imagemap"){
 				$messages=[
 				'type'=>'imagemap',
-				'baseUrl'=>"https://example.com/bot/images/rm001",
+				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
 				'altText'=>"this is an imagemap",
 				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
 				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"https://example.com/",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
@@ -166,7 +166,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "9.54";
+echo "9.58";
 
 
 ?>
