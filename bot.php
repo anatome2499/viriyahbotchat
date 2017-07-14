@@ -69,12 +69,18 @@ if (!is_null($events['events'])) {
 									array(
 										'type' =>'message' ,
 										'label'=>"Yes",
-										'text'=>'yes'),
+										'text'=>'yes'
+										),
 									array(
 										'type' =>'message' ,
 										'label'=>"No",
 										'text'=>'no'
-										) 
+										) ,
+									array(
+										'type' =>"uri" ,
+										'label'=>"detail",
+										'uri'=>"http://www.viriyah.co.th/th/product.php"
+										)
 									) 
 					)
 				];
@@ -195,7 +201,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "11.53";
+echo "13.22";
 
 
 ?>
