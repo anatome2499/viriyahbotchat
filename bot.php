@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			else if($text=="imagemap"){
 				$messages=[
 				'type'=>'imagemap',
-				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/",
+				'baseUrl'=>"https://viriyahbotchat.herokuapp.com",
 				'altText'=>"this is an imagemap",
 				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
 				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"https://example.com/",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
@@ -166,7 +166,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "10.02";
+echo "10.05";
 
 
 ?>
