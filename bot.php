@@ -85,11 +85,54 @@ if (!is_null($events['events'])) {
 					)
 				];
 			}
+			else if($text=="column"){
+				$messages=[
+				'type'=>"template",
+				'altText'=>"this is a carousel template",
+				'template'=>array(
+								'type' =>"carousel" ,
+								'columns'=>array(
+												array(
+													'thumbnailImageUrl' =>"https://example.com/bot/images/item1.jpg" ,
+												 	'title'=>"this is menu",
+												 	'text'=>"description",
+												 	'actions'=>array(
+												 					array(
+												 						'type' => "message",
+												 						'label'=>"Yes",
+												 						'text'=>"yes" 
+												 						),
+												 					array(
+												 						'type' =>"uri" ,
+												 						'label'=>"detail",
+												 						'uri'=>"https://www.google.co.th" 
+												 						)
+												 					)
+												 	)  ,
+												 	'thumbnailImageUrl' =>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png" ,
+												 	'title'=>"this is menu",
+												 	'text'=>"description",
+												 	'actions'=>array(
+												 					array(
+												 						'type' => "message",
+												 						'label'=>"Yes",
+												 						'text'=>"yes" 
+												 						),
+												 					array(
+												 						'type' =>"uri" ,
+												 						'label'=>"detail",
+												 						'uri'=>"http://www.viriyah.co.th/th/product.php" 
+												 						)
+												 					) 
+												 	) 
+								)
+				];
+			}
 			else{
 				// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => ""
 			];
 			}
 
@@ -201,7 +244,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.28";
+echo "13.44";
 
 
 ?>
