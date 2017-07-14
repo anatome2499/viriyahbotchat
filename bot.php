@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'originalContentUrl' => "https://viriyahbotchat.herokuapp.com/2017-07-14_14-42-59.png",
+				'originalContentUrl' => "https://www.google.co.th",
 				'previewImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png"
 			];
 			}
@@ -246,7 +246,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.47";
+echo "14.49";
 
 
 ?>
