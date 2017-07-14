@@ -22,8 +22,8 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'originalContentUrl' => "http://www.asnbroker.co.th/image_news/612/003.jpg",
-				'previewImageUrl'=>"http://www.asnbroker.co.th/image_news/612/003.jpg"
+				'originalContentUrl' => "https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg",
+				'previewImageUrl'=>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg"
 			];
 			}
 			else if($text=="imagemap"){
@@ -62,7 +62,7 @@ if (!is_null($events['events'])) {
 				'altText'=>"this is a buttons template",
 				'template'=>array(
 					'type' =>"buttons" ,
-					'thumbnailImageUrl'=>"http://www.asnbroker.co.th/image_news/612/003.jpg",
+					'thumbnailImageUrl'=>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg",
 					'title'=>"Menu",
 					'text'=>"Please select",
 					'actions'=>array(
@@ -93,7 +93,7 @@ if (!is_null($events['events'])) {
 								'type' =>"carousel" ,
 								'columns'=>array(
 												array(
-													'thumbnailImageUrl' =>"http://www.asnbroker.co.th/image_news/612/003.jpg" ,
+													'thumbnailImageUrl' =>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
 												 	'actions'=>array(
@@ -110,7 +110,7 @@ if (!is_null($events['events'])) {
 												 					)
 												 	)  ,
 												array(
-												 	'thumbnailImageUrl' =>"http://www.asnbroker.co.th/image_news/612/003.jpg" ,
+												 	'thumbnailImageUrl' =>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
 												 	'actions'=>array(
@@ -247,7 +247,7 @@ if (!is_null($events['events'])) {
 	}
 }
 
-echo "15.35";
+echo "15.38";
 
 
 ?>
