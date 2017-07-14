@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 				$messages[
 				"type"=>"template",
 				"altText"=>"this is a button template",
-				"template"=>array('type' =>"buttons" ,"thumbnailImageUrl"=> "https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png","title"=>"Menu","text"=>"Please select","actions"=>array(array('type' =>"postback" ,"label"=>"Buy","text"=>"buy" ),array('type' =>"message" ,"label"=>"Add to cart","text"=>"add to cart" ),array('type' =>"uri" ,"label"=>"View detail","uri"=>"http://www.viriyah.co.th/th/product.php" ) ))
+				"template"=>array('type' =>"buttons" ,"thumbnailImageUrl"=> "https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png","title"=>"Menu","text"=>"Please select","actions"=>array(array('type' =>"message" ,"label"=>"Add to cart","text"=>"add to cart" ),array('type' =>"uri" ,"label"=>"View detail","uri"=>"http://www.viriyah.co.th/th/product.php" ) ))
 				];
 			}
 			else{
@@ -165,7 +165,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "10.36";
+echo "10.42";
 
 
 ?>
