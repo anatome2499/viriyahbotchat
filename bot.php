@@ -39,7 +39,7 @@ if (!is_null($events['events'])) {
 				$messages=[
 				'type'=>'template',
 				'altText'=>"this is a confirm template",
-				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'yes'),array('type' =>'message' ,'label'=>"No",'text'=>'no') ) )
+				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'คุณ กด yes'),array('type' =>'message' ,'label'=>"No",'text'=>'คุณ กด no') ) )
 				];
 			}
 			else{
@@ -158,7 +158,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "10.15";
+echo "10.17";
 
 
 ?>
