@@ -26,6 +26,15 @@ if (!is_null($events['events'])) {
 				'previewImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png"
 			];
 			}
+			else if($text=="imagemap"){
+				$messages=[
+				'type'=>'imagemap',
+				'baseUrl'=>"https://example.com/bot/images/rm001",
+				'altText'=>"this is an imagemap",
+				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
+				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"https://example.com/",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
+				];
+			}
 			else if($text=="template"){
 				// Build message to reply back
 				//$actions['type']=["message","message"];
@@ -157,7 +166,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "9.36";
+echo "9.54";
 
 
 ?>
