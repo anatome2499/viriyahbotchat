@@ -64,7 +64,18 @@ if (!is_null($events['events'])) {
 					'type' =>"buttons" ,
 					'thumbnailImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
 					'title'=>"Menu",
-					'text'=>"Please select"
+					'text'=>"Please select",
+					'actions'=>array(
+									array(
+										'type' =>'message' ,
+										'label'=>"Yes",
+										'text'=>'yes'),
+									array(
+										'type' =>'message' ,
+										'label'=>"No",
+										'text'=>'no'
+										) 
+									) 
 					)
 				];
 			}
@@ -184,7 +195,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "11.47";
+echo "11.50";
 
 
 ?>
