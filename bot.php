@@ -29,10 +29,10 @@ if (!is_null($events['events'])) {
 			else if($text=="imagemap"){
 				$messages=[
 				'type'=>'imagemap',
-				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png/1040",
+				'baseUrl'=>"https://viriyahbotchat.herokuapp.com/1040",
 				'altText'=>"this is an imagemap",
 				'baseSize'=>array('height' =>1040 ,'width'=>1040 ),
-				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"https://example.com/",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
+				'actions'=>array(array('type' =>'uri' ,'linkUri'=>"http://www.viriyah.co.th/th/product.php",'area'=>array('x' =>0 ,'y'=>0,'width'=>520,height=>1040 ) ),array('type' =>'message' ,'text'=>"hello",'area'=>array('x' =>520 ,'y'=>0,'width'=>520,height=>1040 ) ) )
 				];
 			}
 			else if($text=="template"){
@@ -246,7 +246,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.58";
+echo "14.07";
 
 
 ?>
