@@ -74,7 +74,7 @@ if (!is_null($events['events'])) {
 									array(
 										'type' =>'postback' ,
 										'label'=>"Buy",
-										'text'=>"action=buy&itemid=111"
+										'data'=>"action=buy&itemid=111"
 										) ,
 									array(
 										'type' =>"uri" ,
@@ -201,7 +201,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.24";
+echo "13.28";
 
 
 ?>
