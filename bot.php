@@ -18,11 +18,19 @@ if (!is_null($events['events'])) {
 
 			
 
-			if($text=="บาส"){
+			if($text=="ผลิตภัณฑ์ประกันภัย"){
 				// Build message to reply back
+				$actions['type']=>["message","message"];
+				$actions['label']=>["Yes","No"];
+				$actions['text']=>["yes","no"];
+				$template['type']=>"confirm";
+				$template['text']=>"Are you sure?";
+				$template['actions']=>$actions;
+
 			$messages = [
-				'type' => 'text',
-				'text' => "https://www.google.co.th"
+				'type' => 'template',
+				'altText' => "this is a confirm",
+				'template'=>$template
 			];
 			}
 			else{
@@ -141,7 +149,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "8.54";
+echo "9.24";
 
 
 ?>
