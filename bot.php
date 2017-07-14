@@ -109,6 +109,7 @@ if (!is_null($events['events'])) {
 												 						)
 												 					)
 												 	)  ,
+												array(
 												 	'thumbnailImageUrl' =>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png" ,
 												 	'title'=>"this is menu",
 												 	'text'=>"description",
@@ -124,7 +125,8 @@ if (!is_null($events['events'])) {
 												 						'uri'=>"http://www.viriyah.co.th/th/product.php" 
 												 						)
 												 					) 
-												 	) 
+												 	)
+												) 
 								)
 				];
 			}
@@ -244,7 +246,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "13.44";
+echo "13.50";
 
 
 ?>
