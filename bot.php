@@ -246,7 +246,8 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.55";
+include("index.php");
+echo "15.12";
 
 
 ?>
