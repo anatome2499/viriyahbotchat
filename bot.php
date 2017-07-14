@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'originalContentUrl' => "https://www.google.co.th",
+				'originalContentUrl' => "https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png",
 				'previewImageUrl'=>"https://viriyahbotchat.herokuapp.com/2017-07-14_9-08-48.png"
 			];
 			}
@@ -181,7 +181,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages,$messages],
 			];
 
 
@@ -246,7 +246,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "14.49";
+echo "14.55";
 
 
 ?>
