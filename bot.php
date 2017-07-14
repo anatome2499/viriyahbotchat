@@ -141,7 +141,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "15.01";
+echo "8.54";
 
 
 ?>
