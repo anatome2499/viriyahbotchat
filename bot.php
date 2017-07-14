@@ -36,19 +36,11 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if($text=="template"){
-				// Build message to reply back
-				//$actions['type']=["message","message"];
-				//$actions['label']=["Yes","No"];
-				//$actions['text']=["yes","no"];
-				//$template['type']="confirm";
-				//$template['text']="Are you sure?";
-				//$template['actions']=$actions;
-
-			//$messages = [
-				//'type' => 'template',
-				//'altText' => "this is a confirm",
-				//'template'=>$template
-			//];
+				$messages=[
+				'type'=>'template',
+				'altText'=>"this is a confirm template",
+				'template'=>array('type' =>"confirm" ,'text'=>"Are you sure?",'actions'=>array(array('type' =>'message' ,'label'=>"Yes",'text'=>'yes'),array('type' =>'message' ,'label'=>"No",'text'=>'no') ) )
+				];
 			}
 			else{
 				// Build message to reply back
@@ -166,7 +158,7 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "10.05";
+echo "10.15";
 
 
 ?>
