@@ -45,7 +45,7 @@ $messages=[
 								)
 				];
 // Make a POST Request to Messaging API to reply to sender
-			$url = 'https://api.line.me/v2/bot/message/reply';
+			$url = 'https://api.line.me/v2/bot/message/push';
 			$data = [
 				'to' => $userId,
 				'messages' => [$messages],
@@ -63,5 +63,5 @@ $messages=[
 			curl_close($ch);
 
 			echo $result . "\r\n"; 
-			echo "11.39";
+			echo "11.41";
 ?>
