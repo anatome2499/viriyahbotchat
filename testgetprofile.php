@@ -14,9 +14,9 @@ $userId="U123a75ddc358905d48b16cf4b20c3acf";
 			$result = curl_exec($ch);
 			curl_close($ch);
 			$result=json_decode($result,true);
-			//echo "displayname: ".$result['displayName']."<br/>"; 
-			//echo "userId:".$result['userId']."<br/>";
-			//echo "pictureUrl :".$result['pictureUrl']."<br/>";
-			//echo "statusMessage :".$result['statusMessage']."<br/>";
-			echo "14.47";
+			echo "displayname: ".$result['displayName']."<br/>"; 
+			echo "userId:".$result['userId']."<br/>";
+			echo "pictureUrl :".$result['pictureUrl']."<br/>";
+			echo "statusMessage :".$result['statusMessage']."<br/>";
+			echo "14.50";
 ?>
