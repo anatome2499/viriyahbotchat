@@ -4,19 +4,13 @@ $userId="U123a75ddc358905d48b16cf4b20c3acf";
 
 // Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/profile/U123a75ddc358905d48b16cf4b20c3acf';
-			$data = [
-				'to' => $userId,
-				'messages' => [$messages],
-			];
-			$post = json_encode($data);
+
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
 			$result=json_decode($result)
@@ -24,5 +18,5 @@ $userId="U123a75ddc358905d48b16cf4b20c3acf";
 			echo "userId:".$result['userId']."<br/>";
 			echo "pictureUrl :".$result['pictureUrl']."<br/>";
 			echo "statusMessage :".$result['statusMessage']."<br/>";
-			echo "14.38";
+			echo "14.10";
 ?>
