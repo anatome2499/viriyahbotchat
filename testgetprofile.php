@@ -13,10 +13,10 @@ $userId="U123a75ddc358905d48b16cf4b20c3acf";
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			$result = curl_exec($ch);
 			curl_close($ch);
-			$result=json_decode($result)
-			echo "displayname: ".$result['displayName']."<br/>"; 
-			echo "userId:".$result['userId']."<br/>";
-			echo "pictureUrl :".$result['pictureUrl']."<br/>";
-			echo "statusMessage :".$result['statusMessage']."<br/>";
-			echo "14.10";
+			//$result=json_decode($result)
+			//echo "displayname: ".$result['displayName']."<br/>"; 
+			//echo "userId:".$result['userId']."<br/>";
+			//echo "pictureUrl :".$result['pictureUrl']."<br/>";
+			//echo "statusMessage :".$result['statusMessage']."<br/>";
+			echo "14.44";
 ?>
