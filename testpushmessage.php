@@ -63,6 +63,5 @@ $messages=[
 			curl_close($ch);
 
 			echo $result . "\r\n"; 
-			echo randompassword(8);
-
+			echo "11.41";
 ?>
