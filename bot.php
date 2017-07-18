@@ -18,13 +18,19 @@ if (!is_null($events['events'])) {
 
 			
 
-			if($text=="ผลิตภัณฑ์ประกันภัย"){
+			if($text=="image"){
 				// Build message to reply back
 			$messages = [
 				'type' => 'image',
 				'originalContentUrl' => "https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg",
 				'previewImageUrl'=>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg"
 			];
+			}
+			else if($text=="userId"){
+				$messages=[
+				'type'=>"text",
+				'text'=>$event['source']['userId']
+				];
 			}
 			else if($text=="imagemap"){
 				$messages=[
@@ -247,7 +253,7 @@ if (!is_null($events['events'])) {
 	}
 }
 
-echo "15.38";
+echo '11.27';
 
 
 ?>
