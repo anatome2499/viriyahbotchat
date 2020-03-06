@@ -1,6 +1,6 @@
 <?php
 $access_token = 'zwU1HU8d9UeU1ADrGBIn3miov2UMLAvwvSf2KKdODHsJQSmq+J46aFS7icqfwjKJtykwCzPt6GKm60SuxS/zHz8PAasauZHd/C5B0ZY+9Mef8UR3tOaSJlHMbV8l1D1jsgRLC0bolKI7h8eUhsYN0QdB04t89/1O/w1cDnyilFU=';
-$userId='U123a75ddc358905d48b16cf4b20c3acf';
+$userId='Ufe962ccd4b299d9aa895957e923f8fb6';
 $messages=[
 				'type'=>'template',
 				'altText'=>"this is a confirm template",
@@ -21,9 +21,9 @@ $messages=[
 					)
 				];
 // Make a POST Request to Messaging API to reply to sender
-			$url = 'https://api.line.me/v2/bot/message/multicast';
+			$url = 'https://api.line.me/v2/bot/message/push';
 			$data = [
-				'to' => [$userId],
+				'to' => $userId,
 				'messages' => [$messages],
 			];
 			$post = json_encode($data);
@@ -39,5 +39,5 @@ $messages=[
 			curl_close($ch);
 
 			echo $result . "\r\n"; 
-			echo "test";
+			echo "test ja";
 ?>
