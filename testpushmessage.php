@@ -1,6 +1,6 @@
 <?php
 $access_token = 'zwU1HU8d9UeU1ADrGBIn3miov2UMLAvwvSf2KKdODHsJQSmq+J46aFS7icqfwjKJtykwCzPt6GKm60SuxS/zHz8PAasauZHd/C5B0ZY+9Mef8UR3tOaSJlHMbV8l1D1jsgRLC0bolKI7h8eUhsYN0QdB04t89/1O/w1cDnyilFU=';
-$userId="U123a75ddc358905d48b16cf4b20c3acf";
+$userId='U123a75ddc358905d48b16cf4b20c3acf';
 $messages=[
 				'type'=>'template',
 				'altText'=>"this is a confirm template",
