@@ -21,9 +21,9 @@ $messages=[
 					)
 				];
 // Make a POST Request to Messaging API to reply to sender
-			$url = 'https://api.line.me/v2/bot/message/push';
+			$url = 'https://api.line.me/v2/bot/message/multicast';
 			$data = [
-				'to' => $userId,
+				'to' => [$userId],
 				'messages' => [$messages],
 			];
 			$post = json_encode($data);
@@ -39,5 +39,5 @@ $messages=[
 			curl_close($ch);
 
 			echo $result . "\r\n"; 
-			echo "11.41";
+			echo "test";
 ?>
