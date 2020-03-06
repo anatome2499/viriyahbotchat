@@ -139,8 +139,8 @@ if (!is_null($events['events'])) {
 			else{
 				// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => ""
+				'type' => $event['message']['type'],
+				'text' => $event['message']['text']
 			];
 			}
 
