@@ -26,11 +26,25 @@ if (!is_null($events['events'])) {
 				'previewImageUrl'=>"https://daily.rabbitstatic.com/wp-content/uploads/2013/11/viriyah.jpg"
 			];
 			}
-			else if($text=="userId"){
-				$messages=[
-				'type'=>"text",
-				'text'=>$event['source']['userId']
-				];
+			else if($text=="getid"){
+				if(isset($event['source']['userId'])){
+					$messages=[
+					'type'=>"text",
+					'text'=>$event['source']['userId']
+					];
+				}
+				else if(isset($event['source']['groupId'])){
+					$messages=[
+					'type'=>"text",
+					'text'=>$event['source']['groupId']
+					];
+				}
+				else if(isset($event['source']['roomId'])){
+					$messages=[
+					'type'=>"text",
+					'text'=>$event['source']['roomId']
+					];
+				}
 			}
 			else if($text=="imagemap"){
 				$messages=[
